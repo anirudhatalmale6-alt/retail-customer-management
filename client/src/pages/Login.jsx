@@ -55,12 +55,16 @@ export default function Login() {
           {busy ? <span className="spinner" /> : 'Sign in'}
         </button>
 
-        <div className="demo-hint">
-          <strong>Demo accounts</strong> (password <span className="mono">demo1234</span>)<br />
-          admin@demo.local — full access<br />
-          office@demo.local — back office<br />
-          shop@demo.local — shop floor
-        </div>
+        {/* Demo credentials are for the evaluation build only. A production
+            build (npm run build) strips this block entirely. */}
+        {import.meta.env.VITE_SHOW_DEMO_LOGINS === 'true' && (
+          <div className="demo-hint">
+            <strong>Demo accounts</strong> (password <span className="mono">demo1234</span>)<br />
+            admin@demo.local — full access<br />
+            office@demo.local — back office<br />
+            shop@demo.local — shop floor
+          </div>
+        )}
       </form>
     </div>
   );

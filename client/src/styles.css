@@ -136,6 +136,7 @@ body {
   cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   transition: background .12s, border-color .12s, opacity .12s;
   white-space: nowrap;
+  text-decoration: none;   /* some buttons are links (e.g. "View customers") */
 }
 .btn:disabled { opacity: .55; cursor: not-allowed; }
 .btn-primary { background: var(--brand-600); color: var(--white); }

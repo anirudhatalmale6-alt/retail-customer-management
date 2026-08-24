@@ -4,3 +4,4 @@ dist/
 *.log
 .pgdata/
 .DS_Store
+screenshots/
