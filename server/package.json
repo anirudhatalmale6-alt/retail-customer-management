@@ -1,0 +1,26 @@
+{
+  "name": "rcms-server",
+  "version": "1.0.0",
+  "description": "Retail Customer Management System - API server",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "seed": "node src/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "csv-parse": "^7.0.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.2.0",
+    "pg": "^8.23.0",
+    "zod": "^4.4.3"
+  },
+  "type": "module",
+  "private": true
+}
